@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--css-->
+    <link rel="stylesheet" href="./src/css/masculino.css" />
+    <title>E-Comerce / Masculino</title>
+  </head>
+  <body>
+    <!--!nav menu-->
+    <nav class="menu-container">
+      <ul class="left-link">
+        <li>
+          <a href="../../index.html">Inicio</a>
+        </li>
+      </ul>
+      <ul class="right-link">
+        <li>
+          <a href="https://linktr.ee/paulopbi" target="_blank">Contato</a>
+        </li>
+      </ul>
+    </nav>
+    <!--!end of nav menu-->
+
+    <!--!heading block content-->
+    <section class="heading-block-container">
+      <!--?inner heading block content-->
+      <div class="heading-block-content">
+        <h1 class="heading-block__h1">Masculino</h1>
+        <span class="line"></span>
+        <p class="heading-block__paragraphy">
+          Confira as peças de roupas <br />
+          do setor masculino.
+        </p>
+        <!--?end of inner heading block content-->
+      </div>
+    </section>
+    <!--!end of heading block content-->
+
+    <!--!products cards-->
+    <section class="products-card">
+      <!--?card 1-->
+      <div class="products-card-container">
+        <img
+          src="./assets/oculos-de-sol.png"
+          alt="Oculos De Sol"
+          class="products-card__img"
+        />
+        <h3>Óculos De Sol</h3>
+        <button class="products-card__sunglass">R$ 124,47</button>
+      </div>
+
+      <!--?card 2-->
+      <div class="products-card-container">
+        <img
+          src="./assets/camisa-dragon-ball.png"
+          alt="Camisa Do Dragon Ball"
+          class="products-card__img"
+        />
+        <h3>Camisa Dragon Ball</h3>
+        <button class="products-card-dragonball__button">R$ 99,85</button>
+      </div>
+
+      <!--?card 3-->
+      <div class="products-card-container">
+        <img
+          src="./assets/terno-de-luxo.png"
+          alt="Terno De Luxo"
+          class="products-card__img"
+        />
+        <h3>Terno De Luxo</h3>
+        <button class="products-card__suit">R$ 1600</button>
+      </div>
+    </section>
+    <!--!end of products cards-->
+
+    <!--!buy modal-->
+    <div class="buy-modal">
+      <div class="buy-modal-container">
+        <span class="buy-modal-close__btn">
+          <img src="assets/close-x.svg" alt="Close Btn" />
+        </span>
+        <h3>Camisa Dragon Ball</h3>
+        <img src="assets/camisa-dragon-ball.png" alt="Camisa Dragon Ball" />
+        <div class="buy-modal-sizes">
+          <button>Pequena</button>
+          <button>Média</button>
+          <button>Grande</button>
+        </div>
+        <span class="line"></span>
+        <span class="buy-modal__price">R$ 99,85</span>
+        <a href="#" class="buy-modal__btn">Comprar Agora</a>
+      </div>
+    </div>
+    <!--!end buy modal-->
+
+    <!--!footer-->
+    <footer>
+      <!--?copyright, this span line is for javascript manipulation i'll use it on copyright current year-->
+      <p>
+        Paulo Victor <span class="date"></span>
+        Todos Os Direitos Reservados &copy;.
+      </p>
+    </footer>
+    <!--!end of footer-->
+
+    <!--!out of stock modal-->
+    <div class="out-modal-container">
+      <!--modal body-->
+      <div class="out-modal">
+        <p>Produto indisponivel no momento 😥</p>
+        <small>Clique na "Camisa Do Dragon Ball".</small>
+        <a href="#" class="out-modal__close">Fechar</a>
+      </div>
+    </div>
+    <!--!end out of stock modal-->
+
+    <!--!javascript-->
+    <script defer src="./src/js/masculino.js"></script>
+  </body>
+</html>

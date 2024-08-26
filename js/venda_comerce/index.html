@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--css-->
+    <link rel="stylesheet" href="./src/css/home.css" />
+    <title>E-Comerce</title>
+  </head>
+  <body>
+    <!--!nav menu-->
+    <nav class="menu-container">
+      <ul class="left-link">
+        <li>
+          <a href="#">Inicio</a>
+        </li>
+      </ul>
+      <ul class="right-link">
+        <li>
+          <a href="https://linktr.ee/paulopbi" target="_blank">Contato</a>
+        </li>
+      </ul>
+    </nav>
+    <!--!end of nav menu-->
+
+    <!--!heading block content-->
+    <section class="heading-block-container">
+      <!--?inner heading block content-->
+      <div class="heading-block-content">
+        <h1 class="heading-block__h1">Nossos Produtos</h1>
+        <div class="heading-block-line"></div>
+        <p class="heading-block__paragraphy">
+          Confira o catálogo virtual <br />
+          da nossa loja.
+        </p>
+      </div>
+      <!--?end of inner heading block content-->
+    </section>
+    <!--!end of heading block content-->
+
+    <!--!discount banner-->
+    <!--?banner with background picure and text-->
+    <div class="discount-banner">
+      <h2>Desconto de 16% para compras a vista</h2>
+    </div>
+    <!--!end of discount banner-->
+
+    <!--!category-->
+    <section class="category-container">
+      <div class="category-card">
+        <!--?man card-->
+        <div class="category-card-man">
+          <h3>
+            <a href="./pages/masculino/masculino.html"> Masculino </a>
+          </h3>
+        </div>
+
+        <!--?woman card-->
+        <div class="category-card-woman">
+          <h3>
+            <a href="#"> Feminino </a>
+          </h3>
+        </div>
+
+        <!--?kid card-->
+        <div class="category-card-kid">
+          <h3>
+            <a href="#"> Infantil </a>
+          </h3>
+        </div>
+      </div>
+    </section>
+    <!--!end of category-->
+
+    <!--!footer-->
+    <footer>
+      <!--?copyright, this span line is for javascript manipulation i'll use it on copyright current year-->
+      <p>
+        Paulo Victor <span class="date"></span>
+        Todos Os Direitos Reservados &copy;.
+      </p>
+    </footer>
+    <!--!end of footer-->
+
+    <!--!out of stock modal-->
+    <div class="out-modal-container">
+      <!--modal body-->
+      <div class="out-modal">
+        <p>Produto indisponivel no momento 😥</p>
+        <small>Clique no card "masculino".</small>
+        <a href="#" class="out-modal__close">Fechar</a>
+      </div>
+    </div>
+    <!--!end out of stock modal-->
+
+    <!--!javascript-->
+    <script defer src="./src/js/index.js"></script>
+  </body>
+</html>
