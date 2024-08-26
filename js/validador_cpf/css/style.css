@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Mono", monospace, sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(10, 12, 22);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  height: 50vh;
+  margin: 0 auto;
+  border-radius: 8px;
+  background-color: #68c1fd;
+}
+
+main h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+label {
+  display: block;
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 10px 0 5px 0;
+  text-transform: capitalize;
+}
+
+input {
+  width: 50%;
+  font-size: 1em;
+  padding: 5px;
+  outline: none;
+  border: 2px solid #000;
+}
+
+input::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+input.erro {
+  border-color: red;
+}
+
+input.valido {
+  border-color: green;
+}
+
+.erro-text {
+  display: none;
+  margin-top: 5px;
+  font-size: 0.875rem;
+  color: red;
+}
+
+.erro-text.ativar {
+  display: block;
+}
+
+footer {
+  margin-top: 1.7rem;
+}
+
+footer a {
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 1rem;
+  color: #fff;
+  transition: all .7s ease;
+}
+
+footer a:hover {
+  color: #68c1fd;
+}
