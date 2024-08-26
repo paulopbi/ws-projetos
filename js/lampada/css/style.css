@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;500;700&display=swap');
+
+/*Import*/
+
+body {
+    font-family: 'Kaisei HarunoUmi', serif;
+    font-weight: 700;
+    
+    background-image: linear-gradient(38deg, #41295a, #2F0743);
+    background-attachment: fixed;
+}
+/*Header*/
+header, main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px solid rgba(0, 0, 0, 0.8);
+    margin: 20px;
+    border-bottom: 2px solid #6F3CA6;
+    text-transform: capitalize;
+    color: #44A663;
+}
+
+/*Img*/
+
+img {
+    margin: 20px;
+    border: 3px solid #000;
+    border-radius: 20px;
+    box-shadow: 5px 8px 0px rgba(0, 0, 0, 0.116);
+}
+
+/*Buttons*/
+
+button {
+    font-size: 1.5rem;
+    background: transparent;
+    text-transform: uppercase;
+    color: #44A663;
+    padding: .3rem;
+    margin: 10px 5px;
+    border: 2px solid #44A663;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #fff;
+    transition: .2s ease;
+}
+
+/*Section*/
+
+.social {
+    width: 100%;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social a {
+    font-size: 3rem;
+    text-decoration: none;
+    color: #44A663;
+    margin: 30px 15px;
+    cursor: pointer;
+}
+
+.social a:hover {
+    color: #fff;
+}
+
+.social h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 20px;
+    text-transform: capitalize;
+    color: #44A663;
+}
+
+/*Media*/
+
+@media (max-width: 605px) {
+    header h1 {
+        font-size: 3rem;
+        margin: 0 auto;
+    }
+
+    button {
+        font-size: 1.4rem;
+    }
+
+    .social {
+        margin-top: 5px;
+    }
+
+    .social h1 {
+        font-size: 2rem;
+        margin-top: 50px;
+    }
+
+    .social a {
+        font-size: 3rem;
+        text-decoration: none;
+        color: #44A663;
+        margin: 5px 15px;
+    }
+}
+
+@media (max-width: 405px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+    .social h1 {
+        font-size: 2rem;
+        margin-top: 50px;
+    }
+}
