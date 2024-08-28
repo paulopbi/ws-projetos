@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TESTES</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-size: "IBM Plex Mono" arial, helvetica, monospace;
+        font-size: 1.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(32, 32, 32);
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        border-radius: 4px;
+        width: 500px;
+        padding: 3rem;
+        height: auto;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.247);
+        color: rgb(0, 0, 0);
+        background-color: rgb(235, 235, 235);
+      }
+
+      label {
+        display: block;
+        font-weight: bold;
+      }
+
+      input {
+        display: block;
+        width: 100%;
+        padding: 0.8rem;
+        font-size: 1.2rem;
+        margin: 10px 0 20px 0;
+        transition: 0.3s;
+      }
+
+      input[type="text"]:hover,
+      input[type="password"]:hover {
+        box-shadow: 0 0 10px rgb(250, 178, 130);
+      }
+
+      .termos {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+      }
+
+      .termos #checkbox {
+        display: inline-block;
+        width: 2rem;
+        height: 1rem;
+        margin: 0;
+      }
+
+      .termos-texto {
+        font-size: 14px;
+      }
+
+      button {
+        border-radius: 4px;
+        font-size: 1.8rem;
+        font-weight: bold;
+        width: 100%;
+        display: block;
+        padding: 0.8rem 2rem;
+        border: none;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.123);
+        color: rgb(43, 17, 0);
+        background-color: rgb(250, 160, 99);
+        cursor: pointer;
+        transition: 0.2s;
+      }
+
+      button:hover {
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.192);
+        background-color: rgb(252, 174, 122);
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <label for="nome">Nome de usuario</label>
+      <input id="nome" type="text" name="usuario" />
+
+      <label for="senha">Senha</label>
+      <input type="password" name="senha" id="senha" />
+
+      <div class="termos">
+        <input type="checkbox" name="check" id="checkbox" name="lembrar" />
+        <label for="checkbox" class="termos-texto">Lembrar me</label>
+      </div>
+
+      <button>Enviar</button>
+    </form>
+  </body>
+</html>
