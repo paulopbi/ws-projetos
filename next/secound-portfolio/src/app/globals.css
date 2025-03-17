@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .link {
+    @apply rounded-sm border-b-2 border-transparent pb-1 text-white transition-all ease-in-out hover:border-indigo-400 hover:text-indigo-400;
+  }
+
+  .card-slug {
+    @apply inline-block rounded-full border border-white/60 px-2.5 py-1.5 text-[11px] font-normal leading-none tracking-wide text-white/60;
+  }
+
+  .btn-primary {
+    @apply inline-block min-w-28 cursor-pointer rounded border border-indigo-800 bg-indigo-700 text-base font-bold text-indigo-50 transition-colors duration-150 hover:bg-indigo-600;
+  }
+
+  .btn-secondary {
+    @apply inline-block min-w-28 cursor-pointer rounded border border-indigo-700 text-base font-bold text-indigo-50 transition-colors duration-150 hover:bg-indigo-700;
+  }
+
+  .title-gradient {
+    @apply bg-gradient-to-b from-indigo-50 to-indigo-400 bg-clip-text text-transparent;
+  }
+
+  .section-title {
+    @apply py-3 text-3xl font-bold leading-5 tracking-tighter md:text-4xl;
+  }
+
+  .section-subtitle {
+    @apply mx-auto inline-block text-base text-white/80;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 32px;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 11px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #000004;
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #616af1;
+  border-radius: 4px;
+}
